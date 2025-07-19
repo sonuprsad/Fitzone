@@ -1,0 +1,519 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  line-height: 1.6;
+
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #ca2121;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navigation */
+.navbar {
+  background: #111;
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f44336;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Hero Section */
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 25px;
+  background: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #d32f2f;
+}
+
+/* About */
+.about p {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Classes & Facilities */
+.class-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.class-card {
+  background: #fff;
+  padding: 20px;
+  border-left: 5px solid #f44336;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+/* Trainers */
+.trainer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.trainer-card {
+  background: #fff;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trainer-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Pricing */
+.pricing-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.pricing-card {
+  background: #fff;
+  padding: 30px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.pricing-card ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.pricing-card ul li {
+  padding: 5px 0;
+}
+
+/* Schedule */
+.schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.schedule th, .schedule td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Testimonials */
+.testimonial {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 15px auto;
+  border-left: 5px solid #f44336;
+  max-width: 700px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* FAQ */
+.faq-item {
+  margin: 15px 0;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+
+.faq-item h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Contact */
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: none;
+}
+
+/* Chatbot Floating Button */
+.chatbot-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #f44336;
+  color: #fff;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+  z-index: 1000;
+}
+
+.chatbot-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Chatbot Container */
+#chatbot-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 320px;
+  max-height: 450px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* Hide chatbot initially */
+.hidden {
+  display: none;
+}
+
+/* Chat Header */
+.chat-header {
+  background: #ca2121;
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Chatbox Area */
+.chatbox {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  scrollbar-width: thin;
+}
+
+/* Chat bubbles */
+.bot-message, .user-message, .typing-message {
+  max-width: 80%;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Bot Message */
+.bot-message {
+  background: #fff;
+  border: 1px solid #ddd;
+  align-self: flex-start;
+  color: #333;
+}
+
+/* User Message */
+.user-message {
+  background: #f44336;
+  color: #fff;
+  align-self: flex-end;
+}
+
+/* Typing animation bubble */
+.typing-message {
+  background: #eee;
+  color: #555;
+  font-style: italic;
+}
+
+/* Chat Input */
+.chat-input-container {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding: 8px;
+  gap: 6px;
+  background: #fff;
+}
+
+.chat-input-container input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.chat-input-container button {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.chat-input-container button:hover {
+  background: #d32f2f;
+}
+
+/* Simple fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 50px 0 20px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1 1 250px;
+}
+
+.footer-about h3,
+.footer-links h4,
+.footer-social h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f44336;
+}
+
+.footer-social .social-icons a {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  display: inline-block;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  color: #f44336;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social .social-icons {
+    justify-content: center;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #111;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .trainer-list,
+  .pricing-table {
+    flex-direction: column;
+    align-items: center;
+  }
+}
